@@ -3,9 +3,9 @@ permalink: index.html
 ---
 {% assign font_files = site.static_files | where: "font", true %}
  {% for myfontfiles in font_files %}
- {{ myfontfiles.path }}
      {% if myfontfiles.extname == '.ttf' %}
          <ul>
+         <li>{{ myfontfiles.path }}</li>
          <li>{{ myfontfiles.url }}</li>
          <li>{{ myfontfiles.basename }}</li>
          <li>{{ myfontfiles.name }}</li>
