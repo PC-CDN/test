@@ -7,8 +7,8 @@ permalink: index.html
          <ul>
          <li>{{ myfontfiles.path }}</li>
          <li>{{ myfontfiles.url }}</li>
-         <li>{{ myfontfiles.basename }}</li>
          <li>{{ myfontfiles.name }}</li>
+         <li>{{ myfontfiles.basename }}</li>
          <li>{{ myfontfiles.extname }}</li>
          <li></li>
          <li></li>
