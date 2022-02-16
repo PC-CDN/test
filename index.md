@@ -10,7 +10,7 @@ permalink: index.html
          <li>{{ myfontfiles.name }}</li>
          <li>{{ myfontfiles.basename }}</li>
          <li>{{ myfontfiles.extname }}</li>
-         <li></li>
+         <li>{{ myfontfiles.modified_time }}</li>
          <li></li>
          <li></li>
          <li></li>
