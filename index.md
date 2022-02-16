@@ -5,6 +5,7 @@ permalink: index.html
  {% for myfontfiles in font_files %}
  {{ myfontfiles.path }}
      {% if myfontfiles.extname == '.ttf' %}
+         <ul>
          <li>{{ myfontfiles.url }}</li>
          <li>{{ myfontfiles.basename }}</li>
          <li>{{ myfontfiles.name }}</li>
@@ -13,6 +14,7 @@ permalink: index.html
          <li></li>
          <li></li>
          <li></li>
+         </ul>
      {% endif %}
 
 {% endfor %}
