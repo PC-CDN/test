@@ -1,7 +1,7 @@
 ---
 permalink: index.html
 ---
-{% assign image_files = site.static_files | where: "image", true %}
- {% for myimage in image_files %}
+{% assign font_files = site.static_files | where: "fobt", true %}
+ {% for myimage in font_files %}
  {{ myimage.path }}
 {% endfor %}
