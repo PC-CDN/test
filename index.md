@@ -24,6 +24,6 @@ DMMono-MediumItalic
 </span>
 
 
-<div style="font-family: ABeeZee-Regular" align="left">
+<div style="font-family: "ABeeZee-Regular"" align="left">
    ABeeZee
 </div>
