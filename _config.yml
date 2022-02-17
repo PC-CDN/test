@@ -1,5 +1,37 @@
+name: "PC-CDN.eu"
+title: "PC-CDN.eu"
+subtitle: "EU FONTS CDN"
+description: "FONTS - EU Server | PC-CDN.eu" #metadescription
+markdown: kramdown
+highlighter: rouge # pygments or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalink: /:title.html
+excerpt_separator: <!--more-->
+templateserverurl: https://template.pc-cdn.de
+themecolor: blue
+themelogo: https://template.pc-cdn.de/assets/img/logo/logo.png
+dummyimage: overlay-pattern.png
+themeURI: https://template.pc-cdn.de/content/themes/writr/css/none.css
+themeBGimage: none
+GallerieDir: none
+hbbhomeurl: none
+livereload: true
+author: Christian Pfeiffer
+since: 2022
+deactivaterelatedposts: true
+
 defaults:
  - scope:
-    path: "assets/img"
+    path: "fonts"
    values:
-    image: true
+    font: true
+
+# Pagination Settings 
+#pagination:
+#  enabled: true
+#  per_page: 2
+#  permalink: '/page/:num/'
+#  title: ' - page :num'
+#  limit: 0
+#  sort_field: 'date'
+#  sort_reverse: true
