@@ -16,5 +16,6 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
   src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
   /* {{ myfontfiles.name }}:{{ myfontfiles.modified_time }} */
 }
+.FoFam-{{ myfontfiles.basename }} { font-family: "{{ myfontfiles.basename }}" }
   {% endif %}
  {% endfor %}
