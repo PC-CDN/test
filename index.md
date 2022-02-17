@@ -17,12 +17,12 @@ title: PC-CDN - FONT Server &#58; font files 4 pc-cdn
 <span style="font-family:'Rubik[wght]'">
 Rubik[wght]
 </span>
-<span style="font-family:'DMMono-MediumItalic'">
+<span style='font-family:/"DMMono-MediumItalic/"'>
 DMMono-MediumItalic
 </span>
 
 <div class='header'>
- <div class='family' style='font-family:"ABeeZee-Regular"' align='left'>
+ <div class='family' style='font-family:\"ABeeZee-Regular\"' align='left'>
    ABeeZee
  </div>
 </div>
