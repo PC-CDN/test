@@ -6,7 +6,7 @@ title: PC-CDN - FONT Server &#58; font files 4 pc-cdn
 
 <link href="/myfontfiles.css" rel="stylesheet" type="text/css" nonce="" />
 
-<span style='font-family:{::nomarkdown}"{:/nomarkdown}ABeeZee{::nomarkdown}"{:/nomarkdown}'>
+<span markdown="0" style='font-family:"ABeeZee"'>
 [A Hassle-Free Way to Self-Host Google Fonts](https://google-webfonts-helper.herokuapp.com/fonts)
 </span>
 <span style='font-family:{::nomarkdown}"{:/nomarkdown}RozhaOne-Regular{::nomarkdown}"{:/nomarkdown}'>
