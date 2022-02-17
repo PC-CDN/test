@@ -15,15 +15,15 @@ title: PC-CDN - FONT Server &#58; font files 4 pc-cdn
 </span>
 
 ## Test
-<span style="font-family: Rubik[wght]">
+<span class="FoFam-Rubik[wght]">
 Rubik[wght]
 </span>
 
-<span style="font-family: DMMono-MediumItalic">
+<span class="FoFam-DMMono-MediumItalic">
 DMMono-MediumItalic
 </span>
 
 
-<div style='font-family: "ABeeZee-Regular"' align="left">
+<div class="FoFam-ABeeZee-Regular" align="left">
    ABeeZee
 </div>
