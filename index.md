@@ -10,7 +10,7 @@ title: PC-CDN - FONT Server &#58; font files 4 pc-cdn
 <a href="https://google-webfonts-helper.herokuapp.com/fonts">A Hassle-Free Way to Self-Host Google Fonts</a>
 </span>
 
-<span style='font-family:"RozhaOne-Regular"'>
+<span style="font-family:"RozhaOne-Regular"">
 <a href="license.md">Font Licenses and Sorces</a>
 </span>
 
@@ -23,7 +23,7 @@ DMMono-MediumItalic
 </span>
 
 <div class='header'>
- <div class='family' markdown="0" style='font-family:"ABeeZee-Regular"' align='left'>
+ <div class='family' style="font-family:"ABeeZee-Regular"" align='left'>
    ABeeZee
  </div>
 </div>
