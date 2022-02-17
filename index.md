@@ -4,7 +4,7 @@ permalink: /index.html
 title: PC-CDN - FONT Server &#58; font files 4 pc-cdn
 ---
 
-<link href="https://fonts.pc-cdn.eu/myfontfiles.css" rel="stylesheet" type="text/css" nonce="" />
+<link href="/myfontfiles.css" rel="stylesheet" type="text/css" nonce="" />
 
 <span style="font-family:'ABeeZee'">
 [A Hassle-Free Way to Self-Host Google Fonts](https://google-webfonts-helper.herokuapp.com/fonts)
@@ -22,7 +22,7 @@ DMMono-MediumItalic
 </span>
 
 <div class='header'>
- <div class='family' style='font-family:"ABeeZee"' align='left'>
+ <div class='family' style='font-family:"ABeeZee-Regular"' align='left'>
    ABeeZee
  </div>
 </div>
