@@ -15,8 +15,13 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
-  /* Info: {{ myfontfiles.name }} : {{ myfontfiles.modified_time }} */
-  }
+}
 
+@font-face {
+  font-family: '{{ myfontfiles.basename }}::MENU';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
+}
  {% endif %}
  {% endfor %}
