@@ -14,14 +14,14 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
   font-family: '{{ myfontfiles.basename }}';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
+  src: url({{ myfontfiles.path }}) format('ttf');
 }
 
 @font-face {
   font-family: '{{ myfontfiles.basename }}::MENU';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
+  src: url({{ myfontfiles.path }}) format('ttf');
 }
  {% endif %}
  {% endfor %}
