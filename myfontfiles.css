@@ -13,7 +13,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
 .FoFam-{{ myfontfiles.basename }} { font-family: "{{ myfontfiles.basename }}" }
 */
 @font-face {
-  font-family: "{{ myfontfiles.basename }}";
+  font-family: '{{ myfontfiles.basename }}';
   /* font-style: normal; */
   /* font-weight: 400; */
   src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
@@ -21,7 +21,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
 }
 .FoFam-{{ myfontfiles.basename }} {
   font-face {
-    font-family: "{{ myfontfiles.basename }}";
+    font-family: '{{ myfontfiles.basename }}';
     /* font-style: normal; */
     /* font-weight: 400; */
     src: url(https://fonts.pc-cdn.eu{{ myfontfiles.path }}) format('ttf');
