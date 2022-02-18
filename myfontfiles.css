@@ -9,6 +9,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
 {% assign font_files = site.static_files | where: "font", true %}
  {% for myfontfiles in font_files %}
   {% if myfontfiles.extname == '.ttf' %}
+.FoFam-{{ myfontfiles.basename }} { font-family: "{{ myfontfiles.basename }}" }
 @font-face {
   font-family: "{{ myfontfiles.basename }}";
   /* font-style: normal; */
