@@ -4,7 +4,6 @@ layout: null
 {% assign font_files = site.static_files | where: "font", true %}
  {% for myfontfiles in font_files %}
   {% if myfontfiles.extname == '.ttf' %}
-  {{ myfontfiles.basename }}
+   {{ myfontfiles.basename }}
   {% endif %}
- {% endif %}
-{% endfor %}
+ {% endfor %}
