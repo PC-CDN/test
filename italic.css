@@ -9,7 +9,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
 {% assign font_files = site.static_files | where: "font", true %}
  {% for myfontfiles in font_files %}
   {% if myfontfiles.extname == '.ttf' %}
-   {% if myfontfiles.basename = (myfontfiles.basename contains '-italic') %}
+   {% if myfontfiles.basename = (myfontfiles.basename contains 'Italic') %}
 /*
 {{ myfontfiles.basename }}
 ({{ myfontfiles.path }}
