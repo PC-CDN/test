@@ -10,8 +10,6 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
  {% for myfontfiles in font_files %}
   {% if myfontfiles.extname == '.ttf' %}
     {% if myfontfiles.basename contains 'Regular') %}
-
-
 /* {{ myfontfiles.basename }} */
 @font-face {
   font-family: '{{ myfontfiles.basename }}';
@@ -25,7 +23,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
        url('{{ myfontfiles.path }}') format('truetype'), /* Safari, Android, iOS */
        /* url('{{ myfontfiles.basename }}.svg#{{ myfontfiles.basename }}') format('svg'); /* Legacy iOS */
 }
-  {% endif %}
+  {% else %}
   {% if myfontfiles.basename contains 'Italic') %}
 
 /* {{ myfontfiles.basename }}-italic - latin */
@@ -41,12 +39,20 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
        url('{{ myfontfiles.path }}') format('truetype'), /* Safari, Android, iOS */
        /* url('{{ myfontfiles.basename }}.svg#{{ myfontfiles.basename }}') format('svg'); /* Legacy iOS */
 }
+  {% else %}
+/* {{ myfontfiles.basename }} no Regular no Italic */
+@font-face {
+  font-family: '{{ myfontfiles.basename }}';
+  font-style: normal;
+  font-weight: 400;
+  /* src: url('{{ myfontfiles.basename }}.eot'); */ /* IE9 Compat Modes */
+  src: local(''), 
+       /* url({{ myfontfiles.basename }}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /* url('{{ myfontfiles.basename }}.woff2') format('woff2'), /* Super Modern Browsers */
+       /* url('{{ myfontfiles.basename }}.woff') format('woff'), /* Modern Browsers */
+       url('{{ myfontfiles.path }}') format('truetype'), /* Safari, Android, iOS */
+       /* url('{{ myfontfiles.basename }}.svg#{{ myfontfiles.basename }}') format('svg'); /* Legacy iOS */
+}
   {% endif %}
-
-
-
-
-
-
  {% endif %}
- {% endfor %}
+{% endfor %}
