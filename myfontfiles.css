@@ -9,7 +9,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
 {% assign font_files = site.static_files | where: "font", true %}
  {% for myfontfiles in font_files %}
   {% if myfontfiles.extname == '.ttf' %}
-
+/*
 @font-face {
   font-family: '{{ myfontfiles.basename }}';
   font-style: normal;
@@ -23,5 +23,36 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
   font-weight: 400;
   src: url({{ myfontfiles.path }}) format('ttf');
 }
+*/
+
+
+/* {{ myfontfiles.basename }} */
+@font-face {
+  font-family: '{{ myfontfiles.basename }}';
+  font-style: normal;
+  font-weight: 400;
+  /* src: url('{{ myfontfiles.basename }}.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       /* url({{ myfontfiles.basename }}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /* url('.{{ myfontfiles.basename }}.woff2') format('woff2'), /* Super Modern Browsers */
+       /* url('{{ myfontfiles.basename }}.woff') format('woff'), /* Modern Browsers */
+       url('{{ myfontfiles.path }}') format('truetype'), /* Safari, Android, iOS */
+       /* url('{{ myfontfiles.basename }}.svg#{{ myfontfiles.basename }}') format('svg'); /* Legacy iOS */
+}
+/* {{ myfontfiles.basename }}-italic - latin */
+/* @font-face {
+  font-family: '{{ myfontfiles.basename }}';
+  font-style: italic;
+  font-weight: 400; */
+  /* src: url('../fonts/abeezee-v20-latin-italic.eot'); */ /* IE9 Compat Modes */
+  /* src: local(''), */
+       /* url({{ myfontfiles.basename }}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /* url('{{ myfontfiles.basename }}.woff2') format('woff2'), /* Super Modern Browsers */
+       /* url('{{ myfontfiles.basename }}.woff') format('woff'), /* Modern Browsers */
+       /* url('{{ myfontfiles.path }}') format('truetype'), /* Safari, Android, iOS */
+       /* url('{{ myfontfiles.basename }}.svg#{{ myfontfiles.basename }}') format('svg'); /* Legacy iOS */
+/* } */
+
+
  {% endif %}
  {% endfor %}
