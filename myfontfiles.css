@@ -44,7 +44,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
   font-family: '{{ myfontfiles.basename }}';
   font-style: italic;
   font-weight: 400; */
-  /* src: url('../fonts/abeezee-v20-latin-italic.eot'); */ /* IE9 Compat Modes */
+  /* src: url('{{ myfontfiles.basename }}.eot'); */ /* IE9 Compat Modes */
   /* src: local(''), */
        /* url({{ myfontfiles.basename }}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        /* url('{{ myfontfiles.basename }}.woff2') format('woff2'), /* Super Modern Browsers */
