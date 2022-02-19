@@ -10,7 +10,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
  {% for myfontfiles in font_files %}
   {% if myfontfiles.extname == '.ttf' %}
     {% if myfontfiles.basename contains 'Regular') %}
-/* {{ myfontfiles.basename }} */
+/* {{ myfontfiles.basename }} = regular */
 @font-face {
   font-family: '{{ myfontfiles.basename }}';
   font-style: normal;
@@ -26,7 +26,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
   {% else %}
   {% if myfontfiles.basename contains 'Italic') %}
 
-/* {{ myfontfiles.basename }}-italic - latin */
+/* {{ myfontfiles.basename }} = italic */
 @font-face {
   font-family: '{{ myfontfiles.basename }}';
   font-style: italic;
