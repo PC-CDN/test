@@ -23,8 +23,7 @@ Informationen über die Verwendung von Drittkompeten und die anwendbaren Lizenzb
        url('{{ myfontfiles.path }}') format('truetype'), /* Safari, Android, iOS */
        /* url('{{ myfontfiles.basename }}.svg#{{ myfontfiles.basename }}') format('svg'); /* Legacy iOS */
 }
-  {% else %}
-  {% if myfontfiles.basename contains 'Italic') %}
+  {% elsif myfontfiles.basename contains 'Italic') %}
 
 /* {{ myfontfiles.basename }} = italic */
 @font-face {
